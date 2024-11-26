@@ -8,7 +8,7 @@ class NetworkChecker {
             CommandExecutor.execute(isWindows() ? "ipconfig" : "ifconfig");
 
             System.out.println("Pinging localhost:");
-            CommandExecutor.execute("ping 8.8.8.8");
+            CommandExecutor.execute("ping 127.0.0.1");
 
             System.out.println("Tracing route to localhost:");
             CommandExecutor.execute(isWindows() ? "tracert 127.0.0.1" : "traceroute 127.0.0.1");
